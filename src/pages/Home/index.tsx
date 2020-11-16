@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React, { useCallback } from 'react';
 import { Form } from '@unform/web';
 import { FiChevronRight } from 'react-icons/fi';
@@ -8,6 +7,7 @@ import Input from '../../components/Input';
 import { Container, Content, DivLogo, Main } from './styles';
 
 import logo from '../../assets/puzzle.svg';
+import api from '../../services/api';
 
 interface IFormData {
   name: string;
@@ -17,10 +17,10 @@ const Home: React.FC = () => {
   const history = useHistory();
 
   const handleSubmit = useCallback(
-    (data: IFormData) => {
-      console.log(data);
+    async (data: IFormData) => {
+      const response = await api.post('/rooms', data);
 
-      history.push(`/rooms/1`);
+      history.push(`/rooms/${response.data.id}`);
     },
     [history],
   );
@@ -38,7 +38,7 @@ const Home: React.FC = () => {
 
         <Content>
           <Form onSubmit={handleSubmit}>
-            <Input name="classroom" placeholder="Nome da sala" required />
+            <Input name="name" placeholder="Nome da sala" required />
             <button type="submit">
               Iniciar
               <FiChevronRight />

@@ -147,7 +147,6 @@ export const ButtonTime = styled(Link)`
   justify-content: center;
   text-decoration: none;
 
-  margin: 10px auto;
   /* width: 100%; */
   padding: 10px;
   background: var(--red);
@@ -156,4 +155,28 @@ export const ButtonTime = styled(Link)`
   color: var(--white);
   font-weight: bold;
   font-size: 20px;
+`;
+
+export const DivButton = styled.div`
+  margin-top: 10px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+
+    /* width: 100%; */
+    padding: 10px;
+    background: var(--red);
+    border-radius: 16px;
+    border: 0;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 20px;
+  }
 `;
