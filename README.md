@@ -34,8 +34,9 @@ Link para o [backend](https://github.com/andrejr971/point-counter-back)
   <img alt="image" src=".github/game.png" width="100%">
 </p>
 <p align="center">
-  <img alt="image" src=".github/timea.png" width="100%">
+  <img alt="image" src=".github/timea.png" width="30%">
 </p>
+
 ---
 
 Feito by André Junior :wave: [portifólio](https://andrejr.dev)
