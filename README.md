@@ -27,6 +27,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 Point Counter é uma aplicação baseada no passa e repassa,
 criação de salas com dois times (Time A - Time B), e contagem de pontos.
 
+Link [aplicação](https://point-counter.andrejr.online)
+
 Link para o [backend](https://github.com/andrejr971/point-counter-back)
 
 
